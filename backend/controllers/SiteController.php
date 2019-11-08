@@ -14,7 +14,7 @@ class SiteController extends Controller
 {
     /**
      * {@inheritdoc}
-     */
+     *
     public function behaviors()
     {
         return [
@@ -40,6 +40,7 @@ class SiteController extends Controller
             ],
         ];
     }
+	*/
 
     /**
      * {@inheritdoc}
@@ -96,5 +97,10 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    public function actionMacDonald()
+    { 
+	echo 3423;die;
     }
 }
