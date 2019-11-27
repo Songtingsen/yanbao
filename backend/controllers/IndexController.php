@@ -29,6 +29,121 @@ class IndexController extends Controller
         ];
     }
 
+    public function actionYbschool(){
+    	$json = '{
+    "TeamRanking":[
+        {
+            "id":1,
+            "img":"images/",
+            "title":"宜宾学院",
+            "team":[
+                {
+                    "teamOne":"队友1",
+                    "teamTwo":"队友2",
+                    "teamThree":"队友3"
+                }
+            ],
+            "grade":856
+        },
+        {
+            "id":2,
+            "img":"images/",
+            "title":"钦州学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":778
+        },
+        {
+            "id":3,
+            "img":"images/",
+            "title":"枣庄学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":589
+        },
+        {
+            "id":4,
+            "img":"images/",
+            "title":"辽宁科技学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":571
+        },
+        {
+            "id":5,
+            "img":"images/",
+            "title":"广东石油化工学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":552
+        },
+        {
+            "id":6,
+            "img":"images/",
+            "title":"河北民族师范学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":598
+        },
+        {
+            "id":7,
+            "img":"images/",
+            "title":"重庆三峡学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":"复活赛"
+        },
+        {
+            "id":8,
+            "img":"images/",
+            "title":"河北环境工程学院",
+            "team":[
+                {
+                    "teamOne":"小明",
+                    "teamTwo":"小花",
+                    "teamThree":"小蓝"
+                }
+            ],
+            "grade":"已淘汰"
+        }
+    ]
+}';
+	$list = json_decode($json,true);
+
+        return json_encode($list);
+
+    }
+
     public function actionIndex()
     {
 	$arr = '{
